@@ -5,5 +5,5 @@ module.exports = {
 	},
 };
 module.exports = {
-	publicPath: process.env.NODE_ENV === "production" ? "/Marvel-heroes /" : "/",
+	publicPath: process.env.NODE_ENV === "production" ? "/Marvel-heroes/" : "/",
 };

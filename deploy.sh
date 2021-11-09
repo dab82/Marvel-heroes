@@ -22,4 +22,3 @@ git push -f git@github.com:dab82/dab82.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:dab82.github.io/marvel-heroes/
-dab82
