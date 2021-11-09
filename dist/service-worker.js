@@ -11,18 +11,18 @@
  * See https://goo.gl/2aRDsh
  */
 
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+
 importScripts(
-	"https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js"
+  "/precache-manifest.d44d7893929033d1f9e26140975dc95f.js"
 );
 
-importScripts("/precache-manifest.eab04e256ac7a3b73942aae85d168f7d.js");
+workbox.core.setCacheNameDetails({prefix: "marvel"});
 
-workbox.core.setCacheNameDetails({ prefix: "marvel" });
-
-self.addEventListener("message", (event) => {
-	if (event.data && event.data.type === "SKIP_WAITING") {
-		self.skipWaiting();
-	}
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
 });
 
 /**
