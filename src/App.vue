@@ -3,7 +3,7 @@
 		<app-header :changeSearch="changeSearch" />
 
 		<div class="container">
-			<h1 class="pt-3 pb-3">Персонажи Marvel</h1>
+			<h1 class="pt-3 pb-3">Heroes Marvel</h1>
 
 			<app-modal :character="character" />
 			<spinner v-if="loading" />

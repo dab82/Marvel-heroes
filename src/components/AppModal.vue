@@ -28,6 +28,8 @@
 						:alt="character.name"
 					/>
 					<div>
+						<p class="text-muted">{{ character.modified }}</p>
+
 						<h5>Описание:</h5>
 						<p>{{ character.description }}</p>
 

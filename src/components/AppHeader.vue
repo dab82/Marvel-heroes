@@ -1,15 +1,29 @@
 <template>
-	<nav class="navbar sticky-top navbar-dark bg-dark">
+	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand logo" href="/index.html">MARVEL</a>
+			<a class="navbar-brand" href="./">Marvel</a>
 			<form class="d-flex">
 				<input
 					class="form-control me-2"
 					type="search"
-					placeholder="Поиск ..."
+					placeholder="Поиск..."
 					aria-label="Search"
+					v-model.trim="search"
+					@keypress.enter.prevent
+					@input="changeSearch(search)"
 				/>
-				<button class="btn btn-outline-danger" type="submit">GO</button>
+				<button
+					class="btn btn-outline-light"
+					type="reset"
+					@click="
+						() => {
+							search = '';
+							changeSearch(search);
+						}
+					"
+				>
+					GO
+				</button>
 			</form>
 		</div>
 	</nav>
@@ -18,8 +32,11 @@
 <script>
 export default {
 	name: "AppHeader",
+	props: ["changeSearch"],
 	data() {
-		return {};
+		return {
+			search: "",
+		};
 	},
 };
 </script>
