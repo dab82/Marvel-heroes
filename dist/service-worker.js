@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Marvel-heroes /precache-manifest.c9667af02481318d3457379049cf45e7.js"
+  "/Marvel-heroes/precache-manifest.2cd7120de4b23889c9ee741cad8c3117.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "marvel"});
