@@ -2,6 +2,7 @@
 	"name": "marvel",
 	"version": "0.1.0",
 	"private": true,
+	"homepage": "https://dab82.github.io/Marvel-heroes",
 	"scripts": {
 		"serve": "vue-cli-service serve",
 		"dev": "vue-cli-service serve",
